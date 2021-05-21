@@ -1,0 +1,8 @@
+#env
+env/
+
+.vscode
+.DS_Store
+
+#future
+2020
