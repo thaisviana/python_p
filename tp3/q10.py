@@ -29,11 +29,11 @@ def desenha_quadrado_vermelho(x,y):
 def move_quadrado(teclas, x,y):
     if teclas.w and y > 0:
         y -= 1
-    elif teclas.s and y < altura_tela-30:
+    elif teclas.s and y < altura_tela-altura_quadrado:
         y += 1
     if teclas.a and x > 0:
         x -= 1
-    elif teclas.d and x < largura_tela-30:
+    elif teclas.d and x < largura_tela-largura_quadrado:
         x += 1
     return x,y
 

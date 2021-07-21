@@ -28,4 +28,3 @@ while not terminou:
 
 pygame.display.quit()
 pygame.quit()
-
