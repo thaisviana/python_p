@@ -1,5 +1,5 @@
 import os
-
+from datetime import datetime
 # nome_arquivo = 'arq_texto.txt'
 # caminho_absoluto = os.path.abspath(nome_arquivo)
 
@@ -13,8 +13,8 @@ import os
 # lista_de_diretorios.reverse()
 # print(lista_de_diretorios)
 
-lista = ['/', 'Users', 'thaisviana', 'Documents', 'infnet', 'python_p', 'arq_texto.txt']
-print(lista)
-print(*lista)
-# print(os.path.join(*lista))
+# print(os.path.join(*lista_de_diretorios))
+
+informacoes_do_arquivo = os.stat('arq_texto.txt')
+print(datetime.fromtimestamp(informacoes_do_arquivo.st_atime))
 
